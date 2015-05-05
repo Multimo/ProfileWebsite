@@ -1,0 +1,142 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+}
+
+}
+.container{
+    max-width: 100%;
+}
+#nav {
+    background-color: #222;
+    position: fixed;
+    width: 100%;
+    z-index:10;
+    top: 0;
+    left: 0;
+    opacity: .6;
+}
+#nav_wrapper {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-width: 200px;
+}
+#nav ul li {
+    display: inline-block;
+
+}
+#nav ul li:hover {
+    background-color: #333;
+    opacity: 1;
+
+}
+#nav ul li a, visited {
+    color: #CCC;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#nav ul li:hover ul {
+    display: block;
+
+}
+#nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border: 5px solid #222;
+    border-top: 0;
+    margin-left: -5px;
+}
+#nav ul ul li {
+    display: block;
+}
+#nav ul ul li a:hover {
+    color: #699;
+}
+.grid {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+
+}
+
+
+@media screen and (max-width: 570px) {
+
+    .name_intro {
+        display: none;
+    }
+    #name_intro {
+        display: none;
+    }
+    .hover-see{
+        padding-top: 0px;
+        font-size: 10px;
+    }
+
+}
+.image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
+}
+.name_intro {
+	 position: absolute;
+	 bottom: 45%;  
+	 left: 5%; 
+	 width: 400px; 
+	 font-family: Verdana;
+	 font-weight: bold;
+	 color: #fff;
+	 font-size: 200%;
+
+}
+.description-div {
+    border: 1px solid;
+    color: white;    
+    background-color: #333;
+}
+
+.lead {
+    padding: 20px;
+}
+.featured_div {
+    padding: 20px;
+}	
+
+.featured_title{
+    padding: 20px;
+    text-align: center;
+    font-size: 36pt;
+}
+.apps_content{
+    text-align: center;
+}
+.lesser_images{
+    max-height: 300px;
+}
+.hover-see{
+    opacity: .85 !important;
+    font-size: 20px !important;
+    padding-top: 20px;
+    color: #699;
+}
+.contact-info{
+    font-size: 20px; 
+}
