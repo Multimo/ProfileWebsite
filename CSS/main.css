@@ -4,8 +4,13 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+    text-decoration: none !important;
 }
-* {
+a{
+    text-decoration: none;
+}
+#mobile-name-div {
+    display: none;
 }
 
 }
@@ -83,9 +88,17 @@
     #name_intro {
         display: none;
     }
-    .hover-see{
+    .hover-see {
         padding-top: 0px;
         font-size: 10px;
+    }
+    #mobile-name {
+        color: white;
+        background-color: #333;
+    }
+    #mobile-name-div {
+        display: block;
+        margin: 0, auto;
     }
 
 }
@@ -94,6 +107,7 @@
     width: 100%;
     height: auto;
     max-width: 100%;
+    max-height: 950px;
 
 }
 .name_intro {
@@ -105,6 +119,7 @@
 	 font-weight: bold;
 	 color: #fff;
 	 font-size: 200%;
+     z-index: 1;
 
 }
 .description-div {
@@ -124,6 +139,7 @@
     padding: 20px;
     text-align: center;
     font-size: 36pt;
+
 }
 .apps_content{
     text-align: center;
@@ -133,10 +149,22 @@
 }
 .hover-see{
     opacity: .85 !important;
-    font-size: 20px !important;
+    font-size: 20px;
     padding-top: 20px;
     color: #699;
 }
 .contact-info{
-    font-size: 20px; 
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 3px; 
+    background-color: #333;
+}
+.contact-info li:hover {
+    background-color: 
+}
+#projects-title {
+
+}
+#conTack {
+
 }
