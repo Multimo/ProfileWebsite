@@ -106,7 +106,10 @@ a{
     height: auto;
     max-width: 100%;
     max-height: 950px;
+    position: top center;
 
+    background-attachment : fixed;
+    
 }
 .name_intro {
 	 position: absolute;
@@ -179,4 +182,5 @@ a{
 }
 .skills-list ul{
     list-style-type: none !important;
+    
 }
