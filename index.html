@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    
+    
+    <script src="../../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="project-grid.html"  />
 </head>
 
 <body>
@@ -59,7 +63,7 @@
 
     <!-- Nav end -->
 
-    <div>
+    <div class="container-fluid">
 
         <div class="row">
             <div class="header-img">
@@ -89,44 +93,21 @@
         </div>
 
        
-    <div class="row" id="projects-div">
-        <div class="row">
-            <h2 class="featured_title" id="Projects">
-						Projects
-			</h2>
-        </div>
-        <div class="row">
-            <div class="col-md-4 apps_content">
-                <img class="lesser_images" src="http://placekitten.com/g/300/300">
-                <h3> Resume </h3>
-                <p class='lead'> The end project from Udacity's Basic Javascript Course. The Page is generated from a JSON object and implanted into the DOM using JQuery</p>
+        <div class="row" id="projects-div">
+      
+      
+            <div class="col-md-12">
+	            <h2 class="featured_title" id="Projects">
+							Projects
+				</h2>
+	            	
+	        	<project-grid></project-grid>
+	            	
             </div>
-            <div class="col-md-4 apps_content">
-                <img class="lesser_images" src="http://placekitten.com/g/300/300">
-                <h3> Portfolio Website</h3>
-                <p class='lead'>The website your on! Hand-coded as a static platform for showcasing projects.Built using HTML 5, CSS3 BootStrap and a little JQuery</p>
-            </div>
-            <div class="col-md-4 apps_content">
-                <img class="lesser_images" src="http://placekitten.com/g/300/300">
-                <h3> Hero Reveiw App</h3>
-                <p class='lead'>A one page app developed using Angular framwork. I used html templating for more expressive HTML and tried a modular approach to the Development</p>
-            </div>
-            <div class="col-md-4 apps_content">
-                <img class="lesser_images" src="http://placekitten.com/g/300/300">
-                <h3>.PSD to HTML, CSS</h3>
-                <p class='lead'>As part of the final project in Udacity's HTML and CSS course, we are tasked with creating and making a page pixel perfect based on a static .PSD Design.</p>
-            </div>
-            <div class="col-md-4 apps_content">
-                <img class="lesser_images" src="http://placekitten.com/g/300/300">
-                <h3>To-do List</h3>
-                <p class='lead'>A basic To-do List app built using Facebooks React framework. </p>
-            </div>
-
-        </div>
     </div>
     
      <div class="row description-div"><a name="About" />
-            <div class="row" id="mobile-name-div text-center">
+            <div class="col-md-12" id="mobile-name-div text-center">
                 <h1 id="mobile-name">
 					Tim Mulqueen
 				</h1>

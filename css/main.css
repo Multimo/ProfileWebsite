@@ -22,10 +22,7 @@ a{
     display: none;
 }
 
-}
-.container{
-    max-width: 100%;
-}
+
 #nav {
     background-color: #222;
     position: fixed;
@@ -149,7 +146,6 @@ a{
 }	
 
 .featured_title{
-    padding: 20px;
     text-align: center;
     font-size: 36pt;
 

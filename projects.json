@@ -1,0 +1,161 @@
+[
+ {
+     name: "CBJ Construction",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://cjbconstructionok.com/",
+     tech: [
+        "WordPress",
+        "Javascript"
+         ]
+ },
+  {
+     name: "Golden Fist Martial Arts",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://goldenfistmartialarts.net/",
+     tech: [
+         "WordPress",
+         "Javscript"
+         ]
+ },
+  {
+     name: "SS3S Fit Club",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://ss3dfitclub.com/",
+     tech: [
+         "WordPress",
+         ]
+ }, 
+  {
+     name: "Champion Gutter Guard",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://championgutterguard.com/",
+     tech: [
+         "WordPress",
+         ]
+ }, 
+  {
+     name: "Completely Clean Janitorial",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://completelycleanjanitorialservice.com/",
+     tech: [
+         "WordPress",
+         ]
+ },
+   {
+     name: "Maison Belfield",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://maisonbelfield.org/accueil/",
+     tech: [
+         "WordPress",
+         ]
+ },
+   {
+     name: "Art House School",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://artshouseschools.org/",
+     tech: [
+         "WordPress",
+         ]
+ },
+   {
+     name: "Conscious Energy",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://consciousenergyny.com/",
+     tech: [
+         "WordPress",
+         ]
+ },  {
+     name: "New 5 Star Construction",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://new5star.com/",
+     tech: [
+         "WordPress",
+         ]
+ },
+   {
+     name: "Kevin J. M. Senich, LLC",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://kjmsllc.com/",
+     tech: [
+         "WordPress",
+         ]
+ },
+    {
+     name: "Mermaid Massage",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://mermaidmassages.com/",
+     tech: [
+         "WordPress",
+         ]
+ },
+    {
+     name: "On Track Fitness",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://ontrackfitness.org/",
+     tech: [
+         "WordPress",
+         ]
+ },
+    {
+     name: "Charm City Connections",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://charmcityconnections.com/about-us/",
+     tech: [
+         "WordPress",
+         ]
+ },
+    {
+     name: "Kevin J. M. Senich, LLC",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://kjmsllc.com/",
+     tech: [
+         "WordPress",
+         ]
+ },
+    {
+     name: "Airteks",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://airteks.com/",
+     tech: [
+         "Javascript",
+         "PHP"
+         ]
+ },
+    {
+     name: "Van Earl's Cakes",
+     img: ,
+     description: "Developed at LinkNow",
+     link: "http://www.vanearlscakes.com/",
+     tech: [
+         "Javascript",
+         "PHP"
+         ]
+ },
+    {
+     name: "Trousse Voyage",
+     img: ,
+     description: "Custom WordPress Theme",
+     link: "http://www.trousse-voyages.com/",
+     tech: [
+         "WordPress",
+         "SASS",
+         "Gulp",
+         "Jquery"
+         ]
+ }
+]

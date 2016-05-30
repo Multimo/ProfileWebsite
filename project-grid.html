@@ -1,13 +1,44 @@
-<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="bower_components/polymer/polymer.html">
 
 <dom-module id="project-grid">
   <template>
+    
     <style>
       :host {
         display: block;
       }
+      .project-ctn {
+          width: 25%;
+          max-width: 300px;
+          float: left;
+          margin: 10px;
+          background: white;
+          height: 300px;
+      }
+      
+      .project-ctn img {
+        width: 100%;
+        height: 200px;
+      }
+       
+      .project-ctn h2 {
+        color: #333;
+        text-align: center;
+      }  
+      
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <template is="dom-repeat" items="{{projects}}">
+      
+      <div class="project-ctn" data="{{item.tech}}">
+        <a href="{{item.link}}" target="_blank" title="{{item.description}}">
+          <img src="{{item.img}}"></img>
+          <h2>{{item.name}}</h2>
+        </a>
+      </div>
+      
+    </template>
+    
+    
   </template>
 
   <script>
@@ -21,7 +52,171 @@
           value: 'project-grid',
         },
       },
-
+      
+      
+      ready: function() {
+        this.projects = [
+       {
+           name: "CBJ Construction",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://cjbconstructionok.com/",
+           tech: [
+              "WordPress",
+              "Javascript"
+               ]
+       },
+        {
+           name: "Golden Fist Martial Arts",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://goldenfistmartialarts.net/",
+           tech: [
+               "WordPress",
+               "Javscript"
+               ]
+       },
+        {
+           name: "SS3S Fit Club",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://ss3dfitclub.com/",
+           tech: [
+               "WordPress",
+               ]
+       }, 
+        {
+           name: "Champion Gutter Guard",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://championgutterguard.com/",
+           tech: [
+               "WordPress",
+               ]
+       }, 
+        {
+           name: "Completely Clean Janitorial",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://completelycleanjanitorialservice.com/",
+           tech: [
+               "WordPress",
+               ]
+       },
+         {
+           name: "Maison Belfield",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://maisonbelfield.org/accueil/",
+           tech: [
+               "WordPress",
+               ]
+       },
+         {
+           name: "Art House School",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://artshouseschools.org/",
+           tech: [
+               "WordPress",
+               ]
+       },
+         {
+           name: "Conscious Energy",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://consciousenergyny.com/",
+           tech: [
+               "WordPress",
+               ]
+       },  {
+           name: "New 5 Star Construction",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://new5star.com/",
+           tech: [
+               "WordPress",
+               ]
+       },
+         {
+           name: "Kevin J. M. Senich, LLC",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://kjmsllc.com/",
+           tech: [
+               "WordPress",
+               ]
+       },
+          {
+           name: "Mermaid Massage",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://mermaidmassages.com/",
+           tech: [
+               "WordPress",
+               ]
+       },
+          {
+           name: "On Track Fitness",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://ontrackfitness.org/",
+           tech: [
+               "WordPress",
+               ]
+       },
+          {
+           name: "Charm City Connections",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://charmcityconnections.com/about-us/",
+           tech: [
+               "WordPress",
+               ]
+       },
+          {
+           name: "Kevin J. M. Senich, LLC",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://kjmsllc.com/",
+           tech: [
+               "WordPress",
+               ]
+       },
+          {
+           name: "Airteks",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://airteks.com/",
+           tech: [
+               "Javascript",
+               "PHP"
+               ]
+       },
+          {
+           name: "Van Earl's Cakes",
+           img: "http://placekitten.com/g/300/200",
+           description: "Developed at LinkNow",
+           link: "http://www.vanearlscakes.com/",
+           tech: [
+               "Javascript",
+               "PHP"
+               ]
+       },
+          {
+           name: "Trousse Voyage",
+           img: "http://placekitten.com/g/300/200",
+           description: "Custom WordPress Theme",
+           link: "http://www.trousse-voyages.com/",
+           tech: [
+               "WordPress",
+               "SASS",
+               "Gulp",
+               "Jquery"
+               ]
+       }
+      ] 
+    }
     });
   </script>
 </dom-module>
