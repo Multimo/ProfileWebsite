@@ -6,23 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>Tim's Portfolio website</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <title>Tim Mulqueen</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro|Fjalla+One|Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Bitter|Raleway' rel='stylesheet' type='text/css'>
     
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <!--<link rel="manifest" href="favicon/manifest.json">-->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     
     <script src="../../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="project-grid.html"  />
+    <link rel="import" href="card-flip.html"  />
+ 
 </head>
 
 <body>
     <header>
 
         <div class="row">
-            <nav id="nav">
-                <ul class="col-md-8">
+            <nav class="nav">
+                <div class="col-md-1 svg-ctn col-sm-1">
+                    <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 90 90
+">
+                        <g class="logo-entity" id="symbol">
+                            <g class="logo-entity-inner">
+                                <g class="logo"  >
+                                    <polygon points="38.182,57.753 20.18,47.91 20.18,42.455 38.182,32.652 38.182,39.074 25.625,45.113 38.182,51.379 " fill="#000000"></polygon>
+                                    <polygon points="39.848,62.08 46.351,27.918 50.136,27.918 43.56,62.08 " fill="#000000"></polygon>
+                                    <polygon points="51.8,57.78 51.8,51.4 64.372,45.181 51.8,39.028 51.8,32.696 69.82,42.5 69.82,47.91 " fill="#000000"></polygon>
+                                    <path d="M44.999,86.031L9.465,65.517V24.484L44.999,3.969l35.536,20.516v41.029L44.999,86.031L44.999,86.031z M13.07,63.434  l31.929,18.434L76.93,63.434V26.566L44.999,8.131L13.07,26.565V63.434L13.07,63.434z" fill="#000000"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>    
+                </div>
+                <ul class="col-md-7 col-xs-9 col-xs-9">
 
                     <li> <a href="#About">About</a> </li>
 
@@ -35,21 +71,15 @@
                 </ul>
 
 
-                <ul class="social-media-nav col-md-4 text-right">
+                <ul class="social-media-nav col-md-4 col-sm-2 col-xs-3 text-right">
                     <li>
-                        <a href="https://github.com/Multimo">
+                        <a class="rotate" href="https://github.com/Multimo">
                             <i class="fa fa-github" aria-hidden="true"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://twitter.com/TimMulqueen">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://ca.linkedin.com/in/tim-mulqueen-a7821483">
+                        <a class="rotate" href="https://ca.linkedin.com/in/tim-mulqueen-a7821483">
                             <i class="fa fa-linkedin" aria-hidden="true"></i>
                         </a>
                     </li>
@@ -68,35 +98,89 @@
         <div class="row">
             <div class="header-img">
           
-                <div class="name_intro" id="#name_intro">
+                <div class="name_intro " id="#name_intro">
+                    <div class="fade-on-scroll">
 
-                    <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
-                        <g class="logo-entity" id="symbol">
-                            <g class="logo-entity-inner">
-                                <g class="logo"  >
-                                    <polygon points="38.182,57.753 20.18,47.91 20.18,42.455 38.182,32.652 38.182,39.074 25.625,45.113 38.182,51.379 " fill="#000000"></polygon>
-                                    <polygon points="39.848,62.08 46.351,27.918 50.136,27.918 43.56,62.08 " fill="#000000"></polygon>
-                                    <polygon points="51.8,57.78 51.8,51.4 64.372,45.181 51.8,39.028 51.8,32.696 69.82,42.5 69.82,47.91 " fill="#000000"></polygon>
-                                    <path d="M44.999,86.031L9.465,65.517V24.484L44.999,3.969l35.536,20.516v41.029L44.999,86.031L44.999,86.031z M13.07,63.434  l31.929,18.434L76.93,63.434V26.566L44.999,8.131L13.07,26.565V63.434L13.07,63.434z" fill="#000000"></path>
+                        <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 90 90
+    ">
+                            <g class="logo-entity" id="symbol">
+                                <g class="logo-entity-inner">
+                                    <g class="logo"  >
+                                        <polygon points="38.182,57.753 20.18,47.91 20.18,42.455 38.182,32.652 38.182,39.074 25.625,45.113 38.182,51.379 " fill="#000000"></polygon>
+                                        <polygon points="39.848,62.08 46.351,27.918 50.136,27.918 43.56,62.08 " fill="#000000"></polygon>
+                                        <polygon points="51.8,57.78 51.8,51.4 64.372,45.181 51.8,39.028 51.8,32.696 69.82,42.5 69.82,47.91 " fill="#000000"></polygon>
+                                        <path d="M44.999,86.031L9.465,65.517V24.484L44.999,3.969l35.536,20.516v41.029L44.999,86.031L44.999,86.031z M13.07,63.434  l31.929,18.434L76.93,63.434V26.566L44.999,8.131L13.07,26.565V63.434L13.07,63.434z" fill="#000000"></path>
+                                    </g>
                                 </g>
                             </g>
-                        </g>
-                       
-                    </svg>
-                    
-                    <h1>Tim Mulqueen</h1>
-                    <h2>Front End Developer</h2>
 
+                        </svg>
+                                            <div class=" main-header">
+                        <h1>Tim Mulqueen</h1>
+                        <h2>Front End Developer</h2>
+                    </div>
+                    </div>
+    
                 </div>
             </div>
 
         </div>
 
        
-        <div class="row" id="projects-div">
+
+    
+     <div class="row description-div"><a name="About" />
+                <h1 class="text-center" id="About">
+					About Me
+				</h1>
+			
+
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <p class='lead'>
+Hello, I am a coffee powered front end developer who goes by Tim. I build clean and beautiful user interfaces on top of solid pragmatic code. 
+I also dabble in backend creating accessible API’s and effective servers. I love learning new technologies and working on interesting projects.
+                </p>
+            </div>
+            
+       
+    
+       
+    <div class="col-md-12 tech">
+        <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+            
+                 <h2>Languages</h2>
+            <card-flip img="Photos/techicons/tech (2).png" name="CSS3" link="https://developer.mozilla.org/en-US/docs/Web/CSS"></card-flip>
+            <card-flip img="Photos/techicons/tech (6).png" name="HTML5" link="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"></card-flip>
+            <card-flip img="Photos/techicons/tech (15).png" name="Javascript" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript"></card-flip>
+            <card-flip img="Photos/techicons/tech (10).png" name="Python" link="https://www.python.org"></card-flip>
+        </div>
+        <div class="col-md-10 col-md-offset-2 col-sm-12 col-xs-12">
+            
+                 <h2>Frameworks and Libraries:</h2>
+            <card-flip img="Photos/techicons/tech (11).png" name="React" link="https://facebook.github.io/react/"></card-flip>
+            <card-flip img="Photos/techicons/tech (12).png" name="SASS" link="http://sass-lang.com/"></card-flip> 
+            <card-flip img="Photos/techicons/tech (3).png" name="Express" link="http://expressjs.com/"></card-flip>
+            <card-flip img="Photos/techicons/tech (1).png" name="Angular" link="https://angularjs.org/"></card-flip> 
+            <card-flip img="Photos/techicons/tech (7).png" name="jQuery" link="https://jquery.com/"></card-flip>
+            <card-flip img="Photos/techicons/tech (8).png" name="Node" link="https://nodejs.org/en/"></card-flip> 
+            <card-flip img="Photos/techicons/tech (9).png" name="Polymer" link="https://www.polymer-project.org/1.0/"></card-flip> 
+        </div>
+        <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+            
+            <h2>Tools</h2>
+            <card-flip img="Photos/techicons/tech (4).png" name="Git" link="https://git-scm.com/"></card-flip>
+            <card-flip img="Photos/techicons/tech (5).png" name="Gulp" link="http://gulpjs.com/"></card-flip> 
+            <card-flip img="Photos/techicons/tech (13).png" name="Webpack" link="https://webpack.github.io/"></card-flip>
+            <card-flip img="Photos/techicons/tech (14).png" name="WordPress" link="https://wordpress.org/"></card-flip> 
+            <card-flip img="Photos/techicons/tech (14).png" name="Photoshop" link="http://www.adobe.com/ca/products/photoshop/selector.html"></card-flip> 
+         </div>
+
+    </div>
+</div>
+    <div class="row" id="projects-div">
       
       
-            <div class="col-md-12">
+            <div class="project-ctn">
 	            <h2 class="featured_title" id="Projects">
 							Projects
 				</h2>
@@ -104,90 +188,36 @@
 	        	<project-grid></project-grid>
 	            	
             </div>
-    </div>
-    
-     <div class="row description-div"><a name="About" />
-            <div class="col-md-12" id="mobile-name-div text-center">
-                <h1 id="mobile-name">
-					Tim Mulqueen
-				</h1>
-				<h2>Front End Developer</h2>
-            </div>
-
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <p class='lead'>
-                    I am a Self-Taught Web Developer from New Zealand/Middleearth but now I live in Montreal!</br>
-
-                    What started as a curiousity, turned into a hobby and then a passion, the more I learn and explore programming, the more I like it!</br>
-
-                    My goal is to follow this rabbit-hole untill I get to spend all my time building interesting projects and solving intruiging projects
-                </p>
-            </div>
         </div>
-        <div class="row description-div">
-            <div class="col-md-12 featured_div">
- 
+    </div>    
+    <footer class="row footer">
+        <div class="container-footer">
 
-            <div class="col-md-3 col-md-offset-3 lead text-center skills-list">
-                <ul>
-                    <h3 class="featured_title">
-			    		    Technologies
-			    	    </h3>
-
-                    <li>HTML5</li>
-                    <li>CSS3 - bootstrap</li>
-                    <li>Javascript - JQUERY and AJAX</li>
-                    <li>Experience using - Angular and React</li>
-                    <li>Wordpress</li>
-                </ul>
-            </div>
-
-            <div class="col-md-3 md-md-offset-1 lead text-center skills-list">
-
-                <ul>
-                    <h3 class="featured_title ">
-			    	    	Tools
-			     		</h3>
-
-                    <li>Webpack and Node's npm</li>
-                    <li>Linux (Ubuntu) and Windows</li>
-                    <li>Photoshop</li>
-                    <li>Git and Github</li>
-                    <li>Sublime</li>
-
-                </ul>
-            </div>
-        </div>
-
-
-    </div>
-    <div class="row footer">
-
-        <h3 class="featured_title" id="conTack"> 
-					<a name="Contacts">
+            <h3 class="featured_title" id="conTack"> 
 					Contact info
-				 </h3>
+			 </h3>
 
-        <ul class="col-md-12 text-center">
-            <li class="contact-info col-md-12">
-                <a href="mailto:tim.mulqueen@gmail.com">
-							tim.mulqueen@gmail.com
-						</a>
-            </li>
-
-            <li class="contact-info col-md-12">
-                <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">
-							Linkedin
-						</a>
-            </li>
-
-            <li class="contact-info col-md-12">
-                <a href="https://twitter.com/TimMulqueen">
-	                		Twitter
-	                	</a>
-            </li>
-        </ul>
-    </div>
+            <ul class="col-md-12 text-center" id="Contacts">
+                <li class="contact-info col-md-12">
+                    <a href="mailto:tim.mulqueen@gmail.com">
+    					<i class="fa fa-envelope" aria-hidden="true"></i> tim.mulqueen@gmail.com
+    						</a>
+                </li>
+    
+    
+                <li class="contact-info  col-md-12">
+                            <a class="rotating" href="https://github.com/Multimo">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+    	                	</a>
+                </li>
+                <li class="contact-info  col-md-12">
+                            <a class="rotating" href="https://ca.linkedin.com/in/tim-mulqueen-a7821483">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script type="text/javascript" src="js/app.js"></script>
 
   </body>

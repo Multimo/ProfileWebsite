@@ -1,9 +1,19 @@
 <link rel="import" href="bower_components/polymer/polymer.html">
 
+
 <dom-module id="project-grid">
   <template>
-    
+    <link rel="stylesheet" type="text/css" href="css/hex.css"></link>
     <style>
+    
+    project-grid {
+        
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+        
+    }
+
       :host {
         display: block;
       }
@@ -26,20 +36,25 @@
         text-align: center;
       }  
       
+          
+
+      
     </style>
+    <ul id="hexGrid">
     <template is="dom-repeat" items="{{projects}}">
-      
-      <div class="project-ctn" data="{{item.tech}}">
-        <a href="{{item.link}}" target="_blank" title="{{item.description}}">
-          <img src="{{item.img}}"></img>
-          <h2>{{item.name}}</h2>
-        </a>
-      </div>
-      
+        
+          <li class="hex">
+            <a class="hexIn" href="{{item.link}}" target="_blank" title="{{item.description}}">
+            <img src="{{item.img}}"></img> 
+            <h2>{{item.name}}</h2>
+              <p>{{item.description}}</p>
+            </a>
+          </li>
     </template>
-    
-    
+    </ul>
+
   </template>
+
 
   <script>
     Polymer({

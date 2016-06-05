@@ -3,7 +3,8 @@
   "description": "A custom  grid for displaying dev projects",
   "main": "project-grid.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0"
+    "polymer": "Polymer/polymer#^1.4.0",
+    "paper-tooltip": "PolymerElements/paper-tooltip#^1.1.2"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
