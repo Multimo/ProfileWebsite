@@ -8,12 +8,15 @@ $(document).ready(function(){
         var target = this.hash,
         $target = $(target);
 
+
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top-100
-        }, 700, 'swing', function () {
+        }, 1000, 'swing', function () {
             window.location.hash = target;
         });
     });
+    
+    
     
     // on scroll animation
     var fadeOnScroll = $(".fade-on-scroll");
