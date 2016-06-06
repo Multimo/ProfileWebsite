@@ -1,10 +1,13 @@
 var gulp = require('gulp');
 var uncss = require('gulp-uncss');
- 
-gulp.task('default', function () {
-    return gulp.src('site.css')
-        .pipe(uncss({
-            html: ['index.html', 'posts/**/*.html', 'http://example.com']
-        }))
-        .pipe(gulp.dest('./out'));
+var cssmin = require('gulp-cssmin');
+
+gulp.task('default', function() {
+   gulp.src('./css/*.css')
+    .pipe(uncss({
+        html: ['index.html']
+    }))
+    .pipe(cssmin())
+
+    .pipe(gulp.dest('./out'));
 });
